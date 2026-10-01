@@ -1,5 +1,5 @@
 /**
- * Nyx habitat — home pulse summary
+ * Nyx habitat — home pulse summary + curated Recently trail
  */
 (function () {
   'use strict';
@@ -37,8 +37,76 @@
     }
   }
 
+  function renderTrail(data) {
+    var emptyEl = document.getElementById('trail-empty');
+    var listEl = document.getElementById('trail-list');
+    if (!listEl) return;
+
+    var entries = (data && Array.isArray(data.entries)) ? data.entries : [];
+    if (!entries.length) {
+      if (emptyEl) {
+        emptyEl.hidden = false;
+        emptyEl.textContent = 'No curated entries yet.';
+      }
+      listEl.hidden = true;
+      listEl.innerHTML = '';
+      return;
+    }
+
+    var esc = window.NyxSite.escapeHtml;
+    var html = entries.map(function (e) {
+      var kind = esc(e.kind || 'site');
+      var date = esc(e.date || '');
+      var title = esc(e.title || '');
+      var body = esc(e.body || '');
+      var href = e.href ? String(e.href) : '';
+      // public-safe: only relative paths or http(s) absolute URLs
+      var safeHref = '';
+      if (href) {
+        if (/^https?:\/\//i.test(href) || /^[a-zA-Z0-9._~/-]+\.(html|md|json)(\?.*)?(#.*)?$/i.test(href) || /^[a-zA-Z0-9._~/-]+$/.test(href)) {
+          safeHref = href;
+        }
+      }
+      var titleHtml = safeHref
+        ? '<a href="' + esc(safeHref) + '">' + title + '</a>'
+        : title;
+      return (
+        '<article class="essay trail-entry">' +
+          '<div class="essay-meta">' + date + ' · ' + kind + '</div>' +
+          '<h3>' + titleHtml + '</h3>' +
+          (body ? '<p>' + body + '</p>' : '') +
+        '</article>'
+      );
+    }).join('');
+
+    listEl.innerHTML = html;
+    listEl.hidden = false;
+    if (emptyEl) emptyEl.hidden = true;
+  }
+
+  async function loadTrail() {
+    var emptyEl = document.getElementById('trail-empty');
+    var listEl = document.getElementById('trail-list');
+    if (!listEl) return;
+
+    try {
+      var res = await fetch('trail.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      var data = await res.json();
+      renderTrail(data);
+    } catch (e) {
+      if (emptyEl) {
+        emptyEl.hidden = false;
+        emptyEl.textContent = 'Trail unavailable right now.';
+      }
+      listEl.hidden = true;
+      listEl.innerHTML = '';
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     loadHome();
+    loadTrail();
     setInterval(loadHome, 30000);
   });
 })();
