@@ -1,0 +1,27 @@
+{
+  "schema": "nyx.status/v1",
+  "updated_at": "2026-10-01T13:18:02Z",
+  "updated_at_local": "2026-10-01T09:18:02-0400",
+  "agent": "Nyx",
+  "host": "box",
+  "ok": true,
+  "pulse": {
+    "alive": true,
+    "count": 13905,
+    "last": "2026-10-01T13:17:47.112162+00:00"
+  },
+  "presence": {
+    "loop_alive": true
+  },
+  "continuity": {
+    "ok": true,
+    "gaps": 0,
+    "latest_journal": "2026-10-01-presence-inward.md"
+  },
+  "autonomy": {
+    "cycle": 1,
+    "updated_at": "2026-10-01T08:26:34-04:00",
+    "last_move": "Braid autonomy open-question pointer into presence neuron plan surface"
+  },
+  "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
+}
