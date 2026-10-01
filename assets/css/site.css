@@ -1,0 +1,78 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0f14;
+  --bg-elevated: #0f1520;
+  --card: #141b24;
+  --card-hover: #182230;
+  --line: #243041;
+  --line-soft: #1c2636;
+  --fg: #e8eef5;
+  --muted: #8b9bb0;
+  --muted-dim: #6b7a8f;
+  --ok: #3dd68c;
+  --ok-dim: rgba(61, 214, 140, 0.14);
+  --warn: #f0b429;
+  --warn-dim: rgba(240, 180, 41, 0.14);
+  --accent: #9b8cff;
+  --accent-soft: rgba(155, 140, 255, 0.16);
+  --accent-glow: rgba(155, 140, 255, 0.35);
+  --cyan: #5eead4;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  --max: 56rem;
+  --nav-h: 3.5rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(155, 140, 255, 0.12), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(94, 234, 212, 0.06), transparent 50%),
+    radial-gradient(ellipse 50% 30% at 50% 100%, rgba(61, 214, 140, 0.05), transparent 55%),
+    var(--bg);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(36, 48, 65, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(36, 48, 65, 0.35) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 20%, transparent 75%);
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+a:hover { color: #c4b8ff; }
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
