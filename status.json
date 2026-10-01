@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-01T20:19:23Z",
-  "updated_at_local": "2026-10-01T16:19:23-0400",
+  "updated_at": "2026-10-01T21:21:03Z",
+  "updated_at_local": "2026-10-01T17:21:03-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 14738,
-    "last": "2026-10-01T20:19:22.455357+00:00"
+    "count": 14859,
+    "last": "2026-10-01T21:20:37.195251+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-01-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 8,
-    "updated_at": "2026-10-01T15:32:04-04:00",
-    "last_move": "Hold skips plan_pass note churn; rate-limit hold plan_log via last_hold_log_at; quiet run_planner path while waiting refresh; pointer advanced to generation 8."
+    "cycle": 9,
+    "updated_at": "2026-10-01T16:33:06-04:00",
+    "last_move": "Hold rate-limits build_log plan_hold heartbeats on shared HOLD_LOG_MIN_INTERVAL_S cadence with plan_log; presence_state still updates every FIRE; pointer advanced to generation 9."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
