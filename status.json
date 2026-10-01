@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-01T17:19:15Z",
-  "updated_at_local": "2026-10-01T13:19:15-0400",
+  "updated_at": "2026-10-01T18:27:00Z",
+  "updated_at_local": "2026-10-01T14:27:00-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 14382,
-    "last": "2026-10-01T17:19:10.103651+00:00"
+    "count": 14515,
+    "last": "2026-10-01T18:26:30.406199+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-01-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 5,
-    "updated_at": "2026-10-01T12:33:32-04:00",
-    "last_move": "Add answered_stamp.json as durable well_enough signal when steered checklist reaches all-done with \u22651 done step; gate refresh_open_question on answered_generation (consumed_stamp alone insufficient); live gen-4 checklist finished and stamp written by presence execute_step before autonomy refresh to generation 5."
+    "cycle": 6,
+    "updated_at": "2026-10-01T13:35:38-04:00",
+    "last_move": "Allow interim non-steered arcs while generation N is answered-but-unrefreshed (continuity over idle); autonomy_steered_generation updates only on real steer; interim never writes answered_stamp; pointer advanced to generation 6."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
