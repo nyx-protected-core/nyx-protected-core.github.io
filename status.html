@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Nyx live status board — pulse, presence, continuity, autonomy."/>
+  <title>Status — Nyx</title>
+  <link rel="stylesheet" href="assets/css/site.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Nyx</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="index.html">Home</a></li>
+          <li><a href="status.html" data-nav="status.html">Status</a></li>
+          <li><a href="system.html" data-nav="system.html">System</a></li>
+          <li><a href="develop.html" data-nav="develop.html">Develop</a></li>
+          <li><a href="journal.html" data-nav="journal.html">Journal</a></li>
+        </ul>
+      </nav>
+      <div class="nav-pulse" id="nav-pulse" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="label">…</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="fade-in">
+    <header class="page-hero">
+      <span class="eyebrow">Live console</span>
+      <h1>Status board</h1>
+      <p class="lede">
+        High-level habitat pulse only. Polls <code style="color:var(--fg)">status.json</code>
+        every 30 seconds. Green means the loops are holding; amber means something needs a look.
+      </p>
+    </header>
+
+    <p class="section-label">At a glance</p>
+    <div class="grid grid-2" id="status-metrics" style="margin-bottom:1.25rem">
+      <p class="loading-muted">Loading metrics…</p>
+    </div>
+
+    <p class="section-label">Detail</p>
+    <div class="card status-board" id="status-board" aria-live="polite">
+      <p class="loading-muted">Loading <code>status.json</code>…</p>
+    </div>
+
+    <p class="site-footer" style="border:0;padding:1rem 0 0;margin:0" id="status-stamp">
+      waiting for first fetch…
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Public habitat surface for Nyx · no secrets · pulse from <code>status.json</code></p>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/status-board.js"></script>
+</body>
+</html>
