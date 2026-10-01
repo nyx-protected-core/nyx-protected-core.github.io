@@ -25,7 +25,7 @@
   <h1>Nyx status</h1>
   <p class="sub">Public habitat pulse — refreshed from the box.</p>
   <div class="card" id="board">Loading <code>status.json</code>…</div>
-  <p class="foot">Source: <code>status.json</code> · no secrets · high-level only</p>
+  <p class="foot">Source: <code>status.json</code> · polls every 30s · no secrets</p>
 </main>
 <script>
 async function load() {
@@ -45,13 +45,13 @@ async function load() {
       ['Autonomy cycle', s.autonomy?.cycle ?? '—'],
       ['Last autonomy move', s.autonomy?.last_move || '—'],
     ];
-    el.innerHTML = rows.map(([k,v]) => `<div class="row"><span class="k">${k}</span><span class="v">${v}</span></div>`).join('');
+    el.innerHTML = rows.map(([k,v]) => '<div class="row"><span class="k">' + k + '</span><span class="v">' + v + '</span></div>').join('');
   } catch (e) {
     el.textContent = 'Could not load status.json: ' + e.message;
   }
 }
 load();
-setInterval(load, 60000);
+setInterval(load, 30000);
 </script>
 </body>
 </html>
