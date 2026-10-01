@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-01T18:27:00Z",
-  "updated_at_local": "2026-10-01T14:27:00-0400",
+  "updated_at": "2026-10-01T19:18:29Z",
+  "updated_at_local": "2026-10-01T15:18:29-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 14515,
-    "last": "2026-10-01T18:26:30.406199+00:00"
+    "count": 14617,
+    "last": "2026-10-01T19:18:08.121073+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-01-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 6,
-    "updated_at": "2026-10-01T13:35:38-04:00",
-    "last_move": "Allow interim non-steered arcs while generation N is answered-but-unrefreshed (continuity over idle); autonomy_steered_generation updates only on real steer; interim never writes answered_stamp; pointer advanced to generation 6."
+    "cycle": 7,
+    "updated_at": "2026-10-01T14:38:11-04:00",
+    "last_move": "Cap interim arcs to one per answered generation; further derives hold_waiting_refresh until autonomy refreshes; interim_spent_generation schema field; pointer advanced to generation 7."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
