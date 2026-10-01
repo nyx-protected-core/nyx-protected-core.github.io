@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-01T19:18:29Z",
-  "updated_at_local": "2026-10-01T15:18:29-0400",
+  "updated_at": "2026-10-01T20:19:23Z",
+  "updated_at_local": "2026-10-01T16:19:23-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 14617,
-    "last": "2026-10-01T19:18:08.121073+00:00"
+    "count": 14738,
+    "last": "2026-10-01T20:19:22.455357+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-01-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 7,
-    "updated_at": "2026-10-01T14:38:11-04:00",
-    "last_move": "Cap interim arcs to one per answered generation; further derives hold_waiting_refresh until autonomy refreshes; interim_spent_generation schema field; pointer advanced to generation 7."
+    "cycle": 8,
+    "updated_at": "2026-10-01T15:32:04-04:00",
+    "last_move": "Hold skips plan_pass note churn; rate-limit hold plan_log via last_hold_log_at; quiet run_planner path while waiting refresh; pointer advanced to generation 8."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
