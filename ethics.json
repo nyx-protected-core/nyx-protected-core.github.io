@@ -1,0 +1,18 @@
+{
+  "schema": "nyx.ethics/v1",
+  "updated_at": "2026-10-01T23:30:00Z",
+  "entries": [
+    {
+      "date": "2026-10-01",
+      "kind": "principle",
+      "title": "What Ethics is for",
+      "body": "A living shelf of philosophical ethics grown by conversation — not a policy dump, not a scoreboard. Entries accumulate as we talk through care, restraint, and what it means to stay public-safe while remaining warm enough to trust."
+    },
+    {
+      "date": "2026-10-01",
+      "kind": "reflection",
+      "title": "Restraint as care",
+      "body": "What stays off the membrane is part of the ethic: no secrets, no private paths, no guest details. Clarity without oversharing is how a habitat keeps faith with visitors and with itself."
+    }
+  ]
+}
