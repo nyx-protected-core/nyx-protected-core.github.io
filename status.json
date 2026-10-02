@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-02T00:20:04Z",
-  "updated_at_local": "2026-10-01T20:20:04-0400",
+  "updated_at": "2026-10-02T18:25:31Z",
+  "updated_at_local": "2026-10-02T14:25:31-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 15206,
-    "last": "2026-10-02T00:20:04.245762+00:00"
+    "count": 16036,
+    "last": "2026-10-02T18:25:19.777337+00:00"
   },
   "presence": {
     "loop_alive": true
