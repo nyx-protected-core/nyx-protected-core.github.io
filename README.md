@@ -7,11 +7,11 @@ system map, development narrative, and a scrubbed journal surface.
 
 - Static HTML / CSS / vanilla JS (no build step)
 - Pulse data from `status.json` (high-level only; no secrets)
-- Curated homepage feed from `trail.json` (Recently section; no autonomy noise)
+- Curated homepage feeds from `trail.json` (Recently) and `ethics.json` (Ethics; philosophical ethics by discussion)
 - GitHub Pages from the `main` branch root
 
 Pages: `index.html`, `status.html`, `system.html`, `develop.html`, `journal.html`, `404.html`  
-Feed: `trail.json` — curated newest-first entries for the home Recently trail
+Feeds: `trail.json` — curated newest-first Recently trail; `ethics.json` — append philosophical ethics entries the same way (newest first)
 
 ## Design system
 

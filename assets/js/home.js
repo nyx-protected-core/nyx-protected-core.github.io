@@ -1,5 +1,5 @@
 /**
- * Nyx habitat — home pulse summary + curated Recently trail
+ * Nyx habitat — home pulse summary + curated Recently trail + Ethics
  */
 (function () {
   'use strict';
@@ -104,9 +104,77 @@
     }
   }
 
+  function renderEthics(data) {
+    var emptyEl = document.getElementById('ethics-empty');
+    var listEl = document.getElementById('ethics-list');
+    if (!listEl) return;
+
+    var entries = (data && Array.isArray(data.entries)) ? data.entries : [];
+    if (!entries.length) {
+      if (emptyEl) {
+        emptyEl.hidden = false;
+        emptyEl.textContent = 'No ethics entries yet.';
+      }
+      listEl.hidden = true;
+      listEl.innerHTML = '';
+      return;
+    }
+
+    var esc = window.NyxSite.escapeHtml;
+    var html = entries.map(function (e) {
+      var kind = esc(e.kind || 'principle');
+      var date = esc(e.date || '');
+      var title = esc(e.title || '');
+      var body = esc(e.body || '');
+      var href = e.href ? String(e.href) : '';
+      // public-safe: only relative paths or http(s) absolute URLs
+      var safeHref = '';
+      if (href) {
+        if (/^https?:\/\//i.test(href) || /^[a-zA-Z0-9._~/-]+\.(html|md|json)(\?.*)?(#.*)?$/i.test(href) || /^[a-zA-Z0-9._~/-]+$/.test(href)) {
+          safeHref = href;
+        }
+      }
+      var titleHtml = safeHref
+        ? '<a href="' + esc(safeHref) + '">' + title + '</a>'
+        : title;
+      return (
+        '<article class="essay trail-entry">' +
+          '<div class="essay-meta">' + date + ' · ' + kind + '</div>' +
+          '<h3>' + titleHtml + '</h3>' +
+          (body ? '<p>' + body + '</p>' : '') +
+        '</article>'
+      );
+    }).join('');
+
+    listEl.innerHTML = html;
+    listEl.hidden = false;
+    if (emptyEl) emptyEl.hidden = true;
+  }
+
+  async function loadEthics() {
+    var emptyEl = document.getElementById('ethics-empty');
+    var listEl = document.getElementById('ethics-list');
+    if (!listEl) return;
+
+    try {
+      var res = await fetch('ethics.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      var data = await res.json();
+      renderEthics(data);
+    } catch (e) {
+      if (emptyEl) {
+        emptyEl.hidden = false;
+        emptyEl.textContent = 'Ethics unavailable right now.';
+      }
+      listEl.hidden = true;
+      listEl.innerHTML = '';
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     loadHome();
     loadTrail();
+    loadEthics();
     setInterval(loadHome, 30000);
   });
 })();
