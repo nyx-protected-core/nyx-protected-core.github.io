@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-02T21:26:10Z",
-  "updated_at_local": "2026-10-02T17:26:10-0400",
+  "updated_at": "2026-10-02T22:26:57Z",
+  "updated_at_local": "2026-10-02T18:26:57-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 16391,
-    "last": "2026-10-02T21:25:49.624826+00:00"
+    "count": 16511,
+    "last": "2026-10-02T22:26:35.857219+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,12 +16,12 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "2026-10-01-night.md"
+    "latest_journal": "notices.md"
   },
   "autonomy": {
-    "cycle": 15,
-    "updated_at": "2026-10-02T16:31:47-04:00",
-    "last_move": "Answer gen-14 YES: non-rate-limited post-derive hold and plan_pass hold paths attach hold_wait_s to return dicts and build_log rows (touch presence before wait compute); pointer at generation 15."
+    "cycle": 16,
+    "updated_at": "2026-10-02T17:33:01-04:00",
+    "last_move": "Answer gen-15 YES: when execute_step returns held, run_planner treats it as plan_hold (touch presence, attach hold_wait_s, log plan_hold; no plan_execute overwrite; no build_action_index bump); pointer at generation 16."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
