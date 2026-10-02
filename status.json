@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-02T20:23:20Z",
-  "updated_at_local": "2026-10-02T16:23:20-0400",
+  "updated_at": "2026-10-02T21:26:10Z",
+  "updated_at_local": "2026-10-02T17:26:10-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 16267,
-    "last": "2026-10-02T20:23:02.191649+00:00"
+    "count": 16391,
+    "last": "2026-10-02T21:25:49.624826+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,12 +16,12 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "notices.md"
+    "latest_journal": "2026-10-01-night.md"
   },
   "autonomy": {
-    "cycle": 14,
-    "updated_at": "2026-10-02T15:32:47-04:00",
-    "last_move": "Answer gen-13 YES: _touch_hold_presence rewrites computed hold_wait_s on presence_state each quiet-hold FIRE (alongside sticky hold_since); _clear_stale_hold_presence nulls it on steer; pointer at generation 14."
+    "cycle": 15,
+    "updated_at": "2026-10-02T16:31:47-04:00",
+    "last_move": "Answer gen-14 YES: non-rate-limited post-derive hold and plan_pass hold paths attach hold_wait_s to return dicts and build_log rows (touch presence before wait compute); pointer at generation 15."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
