@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-01T23:17:19Z",
-  "updated_at_local": "2026-10-01T19:17:19-0400",
+  "updated_at": "2026-10-02T00:20:04Z",
+  "updated_at_local": "2026-10-01T20:20:04-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 15082,
-    "last": "2026-10-01T23:17:14.233867+00:00"
+    "count": 15206,
+    "last": "2026-10-02T00:20:04.245762+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-01-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 11,
-    "updated_at": "2026-10-01T18:29:51-04:00",
-    "last_move": "Answer gen-10 KEEP: quiet-hold FIREs always rewrite presence_state last_build_at/last_plan_* via _touch_hold_presence..."
+    "cycle": 12,
+    "updated_at": "2026-10-01T19:33:16-04:00",
+    "last_move": "Answer gen-11 YES: sticky hold_since on presence_state via _touch_hold_presence (first quiet-hold FIRE) and clear on steer via _clear_stale_hold_presence; pointer at generation 12."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
