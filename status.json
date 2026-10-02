@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-02T18:25:31Z",
-  "updated_at_local": "2026-10-02T14:25:31-0400",
+  "updated_at": "2026-10-02T19:23:47Z",
+  "updated_at_local": "2026-10-02T15:23:47-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 16036,
-    "last": "2026-10-02T18:25:19.777337+00:00"
+    "count": 16151,
+    "last": "2026-10-02T19:23:36.505869+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,12 +16,12 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "2026-10-01-presence-inward.md"
+    "latest_journal": "notices.md"
   },
   "autonomy": {
-    "cycle": 12,
-    "updated_at": "2026-10-01T19:33:16-04:00",
-    "last_move": "Answer gen-11 YES: sticky hold_since on presence_state via _touch_hold_presence (first quiet-hold FIRE) and clear on steer via _clear_stale_hold_presence; pointer at generation 12."
+    "cycle": 13,
+    "updated_at": "2026-10-02T14:30:58-04:00",
+    "last_move": "Answer gen-12 YES: expose hold_wait_s (seconds since sticky hold_since) on quiet-hold run_planner return dict and rat..."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
