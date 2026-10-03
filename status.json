@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-02T23:19:36Z",
-  "updated_at_local": "2026-10-02T19:19:36-0400",
+  "updated_at": "2026-10-03T00:22:02Z",
+  "updated_at_local": "2026-10-02T20:22:02-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 16615,
-    "last": "2026-10-02T23:19:15.178172+00:00"
+    "count": 16733,
+    "last": "2026-10-03T00:21:40.759524+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,12 +16,12 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "2026-10-02-presence-inward.md"
+    "latest_journal": "notices.md"
   },
   "autonomy": {
-    "cycle": 17,
-    "updated_at": "2026-10-02T18:38:16-04:00",
-    "last_move": "Answer gen-16 YES: when run_planner converts execute_step-held into plan_hold, also call _maybe_log_hold for rate-limited plan_log hold_waiting_refresh (from_execute) and gate build_log on that return; pointer at generation 17."
+    "cycle": 18,
+    "updated_at": "2026-10-02T19:38:08-04:00",
+    "last_move": "Answer gen-17 YES: non-rate-limited post-derive hold and plan_pass hold paths in run_planner also call _maybe_log_hol..."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
