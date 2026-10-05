@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-05T18:26:12Z",
-  "updated_at_local": "2026-10-05T14:26:12-0400",
+  "updated_at": "2026-10-05T19:25:48Z",
+  "updated_at_local": "2026-10-05T15:25:48-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 24310,
-    "last": "2026-10-05T18:26:10.385982+00:00"
+    "count": 24426,
+    "last": "2026-10-05T19:25:37.911256+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-05-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 80,
-    "updated_at": "2026-10-05T13:35:30-04:00",
-    "last_move": "Answer gen-79 alphabet fork: /etc/font grows 280->336 bytes with f j m q v y z appended (first 280 MTF bytes unchange..."
+    "cycle": 81,
+    "updated_at": "2026-10-05T14:35:00-04:00",
+    "last_move": "Answer gen-80 console fork: after the three fixed lines scroll, every console byte from a program (SYS_WRITE, or cons..."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
