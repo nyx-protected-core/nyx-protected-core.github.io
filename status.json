@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-05T17:21:25Z",
-  "updated_at_local": "2026-10-05T13:21:25-0400",
+  "updated_at": "2026-10-05T18:26:12Z",
+  "updated_at_local": "2026-10-05T14:26:12-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 24183,
-    "last": "2026-10-05T17:20:55.951978+00:00"
+    "count": 24310,
+    "last": "2026-10-05T18:26:10.385982+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-05-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 79,
-    "updated_at": "2026-10-05T12:39:30-04:00",
-    "last_move": "Answer gen-78 first fork: kernel.c undoes the NYX-CODE move-to-front packing once when it seeds /etc/font, so console..."
+    "cycle": 80,
+    "updated_at": "2026-10-05T13:35:30-04:00",
+    "last_move": "Answer gen-79 alphabet fork: /etc/font grows 280->336 bytes with f j m q v y z appended (first 280 MTF bytes unchange..."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
