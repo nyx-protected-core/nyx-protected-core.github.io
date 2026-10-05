@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-05T16:25:16Z",
-  "updated_at_local": "2026-10-05T12:25:16-0400",
+  "updated_at": "2026-10-05T17:21:25Z",
+  "updated_at_local": "2026-10-05T13:21:25-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 24074,
-    "last": "2026-10-05T16:25:16.371720+00:00"
+    "count": 24183,
+    "last": "2026-10-05T17:20:55.951978+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-05-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 78,
-    "updated_at": "2026-10-05T11:44:30-04:00",
-    "last_move": "Answer gen-77 first fork: the clock check now keeps the 64x8 band's pixels at the first sample and counts pixels that..."
+    "cycle": 79,
+    "updated_at": "2026-10-05T12:39:30-04:00",
+    "last_move": "Answer gen-78 first fork: kernel.c undoes the NYX-CODE move-to-front packing once when it seeds /etc/font, so console..."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
