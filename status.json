@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-05T14:29:57Z",
-  "updated_at_local": "2026-10-05T10:29:57-0400",
+  "updated_at": "2026-10-05T15:31:45Z",
+  "updated_at_local": "2026-10-05T11:31:45-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 23848,
-    "last": "2026-10-05T14:29:50.588096+00:00"
+    "count": 23969,
+    "last": "2026-10-05T15:31:39.494848+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-05-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 76,
-    "updated_at": "2026-10-05T07:34:00-04:00",
-    "last_move": "Answer gen-75 first fork: sha256 now guards the OS itself. sha256 check mode \"<path> <hex>\" (>=16-hex prefix, ok/BAD,..."
+    "cycle": 77,
+    "updated_at": "2026-10-05T10:46:00-04:00",
+    "last_move": "Answer gen-76 first two forks together: full 64-hex digests at boot. USER_ARG_MAX 32->96; sha256 check mode refuses p..."
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
