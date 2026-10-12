@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T12:46:28Z",
-  "updated_at_local": "2026-10-12T08:46:28-0400",
+  "updated_at": "2026-10-12T13:44:11Z",
+  "updated_at_local": "2026-10-12T09:44:11-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32209,
-    "last": "2026-10-12T12:46:14.341357+00:00"
+    "count": 32266,
+    "last": "2026-10-12T13:43:54.884326+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,20 +19,26 @@
     "latest_journal": "2026-10-12-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 140,
-    "updated_at": "2026-10-12T07:35:05-04:00",
-    "last_move": "Answered gen 139 fork: status.html renders self_checks (metric card + detail rows for ritual, writer_labels, runbook ..."
+    "cycle": 141,
+    "updated_at": "2026-10-12T08:47:18-04:00",
+    "last_move": "Gen 140 confirm blocked (no 2026-10-12 ritual record at 08:45). self_checks now carries ritual_due (today/pending/lat..."
   },
   "self_checks": {
-    "ritual_at": "2026-10-11T08:50:20.830148-04:00",
+    "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 23,
-    "ritual_due": "pending",
+    "ritual_age_h": 0,
+    "ritual_due": "today",
     "writer_labels": {
-      "recorded": false
+      "recorded": true,
+      "suspect": false,
+      "unrecognised_count": 0
     },
     "runbook": {
-      "recorded": false
+      "recorded": true,
+      "present": 81,
+      "total": 81,
+      "missing_count": 0,
+      "suspect": false
     }
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
