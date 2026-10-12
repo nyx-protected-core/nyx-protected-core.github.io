@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T16:44:00Z",
-  "updated_at_local": "2026-10-12T12:44:00-0400",
+  "updated_at": "2026-10-12T17:33:14Z",
+  "updated_at_local": "2026-10-12T13:33:14-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32515,
-    "last": "2026-10-12T16:41:49.094571+00:00"
+    "count": 32572,
+    "last": "2026-10-12T17:32:47.457890+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-12-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 144,
-    "updated_at": "2026-10-12T11:54:43-04:00",
-    "last_move": "Gen 143 fork one: returned to Nyx OS with a staged self-authored binary min-heap wake queue (staged/heap); host pass,..."
+    "cycle": 145,
+    "updated_at": "2026-10-12T12:53:30-04:00",
+    "last_move": "Gen 144 fork one: staged host model of SYS_SLEEP_TICKS waking from an indexed min-heap vs verbatim sched.c linear sca..."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 3,
+    "ritual_age_h": 4,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
