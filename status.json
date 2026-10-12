@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T21:30:31Z",
-  "updated_at_local": "2026-10-12T17:30:31-0400",
+  "updated_at": "2026-10-12T22:26:26Z",
+  "updated_at_local": "2026-10-12T18:26:26-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32972,
-    "last": "2026-10-12T21:30:17.910362+00:00"
+    "count": 33082,
+    "last": "2026-10-12T22:26:16.406960+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-12-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 149,
-    "updated_at": "2026-10-12T16:40:02-04:00",
-    "last_move": "Gen 148 fork two: rewrote the three sched-heap patches with the decided root include \"sleep_heap.h\" (verbatim apply, ..."
+    "cycle": 150,
+    "updated_at": "2026-10-12T17:39:11-04:00",
+    "last_move": "Gen 149 fork one: wake_model_k.c links real sleep_heap.c under host/ stubs; run.sh builds inline + kernel-linked twin..."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 8,
+    "ritual_age_h": 9,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
