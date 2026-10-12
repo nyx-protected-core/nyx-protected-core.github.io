@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T15:00:54Z",
-  "updated_at_local": "2026-10-12T11:00:54-0400",
+  "updated_at": "2026-10-12T15:41:25Z",
+  "updated_at_local": "2026-10-12T11:41:25-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32370,
-    "last": "2026-10-12T15:00:31.589770+00:00"
+    "count": 32412,
+    "last": "2026-10-12T15:31:24.543175+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -21,7 +21,7 @@
   "autonomy": {
     "cycle": 143,
     "updated_at": "2026-10-12T11:00:49-04:00",
-    "last_move": "Gen 142 fork YES: scrub-safe night_writer_trail kind tallies in self_checks + Night trail board row. Publisher+JS; push pending."
+    "last_move": "Gen 142 fork YES: scrub-safe night_writer_trail kind tallies in self_checks + Night trail board row; push ad7aca8a."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
