@@ -2,6 +2,7 @@
  * Nyx habitat — full live status board
  * Polls status.json every 30s; renders ok/attention + pulse/presence/continuity/autonomy/self_checks.
  * Cycle 140: self_checks block (ritual + writer_labels + runbook N/M).
+ * Cycle 143: night_writer_trail kind tallies (scrub-safe counts).
  */
 (function () {
   'use strict';
@@ -75,6 +76,30 @@
       html += row('Runbook', badge(!rb.suspect, nm, nm) + miss);
     } else {
       html += row('Runbook', badge(false, '', 'not recorded'));
+    }
+
+    // Cycle 143: scrub-safe night writer kind tallies (informational; not ok gate).
+    var nwt = sc.night_writer_trail || {};
+    if (nwt.recorded) {
+      var kinds = nwt.kinds || {};
+      var parts = [];
+      if (nwt.nights != null) parts.push(esc(String(nwt.nights)) + 'n');
+      ['known', 'untagged', 'no_writer_line', 'no_note', 'unrecognised'].forEach(function (k) {
+        if (kinds[k] != null) parts.push(esc(k) + ' ' + esc(String(kinds[k])));
+      });
+      Object.keys(kinds).sort().forEach(function (k) {
+        if (['known', 'untagged', 'no_writer_line', 'no_note', 'unrecognised'].indexOf(k) >= 0) return;
+        parts.push(esc(k) + ' ' + esc(String(kinds[k])));
+      });
+      var gap = nwt.no_note_run_from_end != null
+        ? ' <span style="color:var(--muted-dim)">· no-note run ' + esc(String(nwt.no_note_run_from_end)) + '</span>'
+        : '';
+      var end = nwt.end_day
+        ? ' <span style="color:var(--muted-dim)">· through ' + esc(String(nwt.end_day)) + '</span>'
+        : '';
+      html += row('Night trail', (parts.length ? parts.join(' · ') : esc('recorded')) + gap + end);
+    } else {
+      html += row('Night trail', badge(false, '', 'not recorded'));
     }
     return html;
   }

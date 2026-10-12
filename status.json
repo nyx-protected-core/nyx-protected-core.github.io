@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T14:51:44Z",
-  "updated_at_local": "2026-10-12T10:51:44-0400",
+  "updated_at": "2026-10-12T15:00:54Z",
+  "updated_at_local": "2026-10-12T11:00:54-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32356,
-    "last": "2026-10-12T14:46:25.503507+00:00"
+    "count": 32370,
+    "last": "2026-10-12T15:00:31.589770+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,9 +19,9 @@
     "latest_journal": "2026-10-12-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 142,
-    "updated_at": "2026-10-12T09:56:02-04:00",
-    "last_move": "Gen 141 confirm PASS: ritual_due=today on on-box+live board; writer_labels/runbook recorded true suspect false. Stamp..."
+    "cycle": 143,
+    "updated_at": "2026-10-12T11:00:49-04:00",
+    "last_move": "Gen 142 fork YES: scrub-safe night_writer_trail kind tallies in self_checks + Night trail board row. Publisher+JS; push pending."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
@@ -39,6 +39,21 @@
       "total": 81,
       "missing_count": 0,
       "suspect": false
+    },
+    "night_writer_trail": {
+      "recorded": true,
+      "nights": 7,
+      "end_day": "2026-10-11",
+      "kinds": {
+        "untagged": 1,
+        "known": 1,
+        "no_writer_line": 2,
+        "no_note": 3
+      },
+      "known_tags": {
+        "routine_safety_net": 1
+      },
+      "no_note_run_from_end": 0
     }
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
