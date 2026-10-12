@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T12:36:33Z",
-  "updated_at_local": "2026-10-12T08:36:33-0400",
+  "updated_at": "2026-10-12T12:46:28Z",
+  "updated_at_local": "2026-10-12T08:46:28-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32189,
-    "last": "2026-10-12T12:36:02.758143+00:00"
+    "count": 32209,
+    "last": "2026-10-12T12:46:14.341357+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -26,6 +26,8 @@
   "self_checks": {
     "ritual_at": "2026-10-11T08:50:20.830148-04:00",
     "ritual_ok": true,
+    "ritual_age_h": 23,
+    "ritual_due": "pending",
     "writer_labels": {
       "recorded": false
     },

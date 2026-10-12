@@ -44,6 +44,16 @@
     var overall = selfChecksOk(sc);
     html += row('Self checks', badge(overall, 'recorded', wl.recorded && rb.recorded ? 'suspect' : 'pending'));
     html += row('Ritual at', esc(fmt(sc.ritual_at) || (sc.ritual_at ? String(sc.ritual_at) : '—')));
+    // Cycle 141: freshness so yesterday's record never reads as today's.
+    if (sc.ritual_due) {
+      var due = String(sc.ritual_due);
+      var dueBadge = due === 'today' ? badge(true, 'today', '')
+        : badge(false, '', esc(due === 'pending' ? 'pending today' : due));
+      var age = sc.ritual_age_h != null
+        ? ' <span style="color:var(--muted-dim)">· ' + esc(String(sc.ritual_age_h)) + 'h old</span>'
+        : '';
+      html += row('Ritual fresh', dueBadge + age);
+    }
     html += row('Ritual', sc.ritual_ok == null ? esc('—') : badge(!!sc.ritual_ok, 'ok', 'fail'));
 
     if (wl.recorded) {
