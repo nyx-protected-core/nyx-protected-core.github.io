@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T17:33:14Z",
-  "updated_at_local": "2026-10-12T13:33:14-0400",
+  "updated_at": "2026-10-12T18:36:44Z",
+  "updated_at_local": "2026-10-12T14:36:44-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32572,
-    "last": "2026-10-12T17:32:47.457890+00:00"
+    "count": 32660,
+    "last": "2026-10-12T18:36:29.930297+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-12-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 145,
-    "updated_at": "2026-10-12T12:53:30-04:00",
-    "last_move": "Gen 144 fork one: staged host model of SYS_SLEEP_TICKS waking from an indexed min-heap vs verbatim sched.c linear sca..."
+    "cycle": 146,
+    "updated_at": "2026-10-12T13:48:12-04:00",
+    "last_move": "Gen 145 fork one: fold signed-delta compare and pos[]/remove_id into staged/heap; host HOST_EXTRA pass; ring-3 1468/1..."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 4,
+    "ritual_age_h": 5,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
