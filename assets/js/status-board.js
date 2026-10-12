@@ -1,6 +1,7 @@
 /**
  * Nyx habitat — full live status board
- * Polls status.json every 30s; renders ok/attention + pulse/presence/continuity/autonomy.
+ * Polls status.json every 30s; renders ok/attention + pulse/presence/continuity/autonomy/self_checks.
+ * Cycle 140: self_checks block (ritual + writer_labels + runbook N/M).
  */
 (function () {
   'use strict';
@@ -20,6 +21,52 @@
         '<span class="v' + (long ? ' long' : '') + '">' + v + '</span>' +
       '</div>'
     );
+  }
+
+  function selfChecksOk(sc) {
+    if (!sc) return false;
+    var wl = sc.writer_labels || {};
+    var rb = sc.runbook || {};
+    if (!wl.recorded || !rb.recorded) return false;
+    if (wl.suspect) return false;
+    if (rb.suspect) return false;
+    if (sc.ritual_ok === false) return false;
+    return true;
+  }
+
+  function renderSelfChecks(sc, esc, fmt) {
+    if (!sc) {
+      return row('Self checks', badge(false, '', 'missing'));
+    }
+    var wl = sc.writer_labels || {};
+    var rb = sc.runbook || {};
+    var html = '';
+    var overall = selfChecksOk(sc);
+    html += row('Self checks', badge(overall, 'recorded', wl.recorded && rb.recorded ? 'suspect' : 'pending'));
+    html += row('Ritual at', esc(fmt(sc.ritual_at) || (sc.ritual_at ? String(sc.ritual_at) : '—')));
+    html += row('Ritual', sc.ritual_ok == null ? esc('—') : badge(!!sc.ritual_ok, 'ok', 'fail'));
+
+    if (wl.recorded) {
+      html += row('Writer labels', badge(!wl.suspect, 'clear', 'suspect') +
+        (wl.unrecognised_count != null
+          ? ' <span style="color:var(--muted-dim)">· unrecognised ' + esc(String(wl.unrecognised_count)) + '</span>'
+          : ''));
+    } else {
+      html += row('Writer labels', badge(false, '', 'not recorded'));
+    }
+
+    if (rb.recorded) {
+      var nm = (rb.present != null && rb.total != null)
+        ? esc(String(rb.present) + '/' + String(rb.total))
+        : '—';
+      var miss = rb.missing_count != null
+        ? ' <span style="color:var(--muted-dim)">· missing ' + esc(String(rb.missing_count)) + '</span>'
+        : '';
+      html += row('Runbook', badge(!rb.suspect, nm, nm) + miss);
+    } else {
+      html += row('Runbook', badge(false, '', 'not recorded'));
+    }
+    return html;
   }
 
   function renderBoard(s) {
@@ -46,6 +93,7 @@
     html += row('Latest journal', esc((s.continuity && s.continuity.latest_journal) || '—'));
     html += row('Autonomy cycle', esc(String(s.autonomy && s.autonomy.cycle != null ? s.autonomy.cycle : '—')));
     html += row('Last autonomy move', esc(trunc(s.autonomy && s.autonomy.last_move, 220)), true);
+    html += renderSelfChecks(s.self_checks, esc, fmt);
     if (s.note) html += row('Note', esc(s.note), true);
     return html;
   }
@@ -57,6 +105,19 @@
     var presenceOk = !!(s.presence && s.presence.loop_alive);
     var contOk = !!(s.continuity && s.continuity.ok);
     var overallOk = !!s.ok;
+    var sc = s.self_checks;
+    var scOk = selfChecksOk(sc);
+    var scSub;
+    if (!sc) {
+      scSub = 'missing';
+    } else if (!(sc.writer_labels && sc.writer_labels.recorded) || !(sc.runbook && sc.runbook.recorded)) {
+      scSub = 'pending ritual';
+    } else {
+      var rb = sc.runbook;
+      scSub = (rb.present != null && rb.total != null)
+        ? ('runbook ' + esc(String(rb.present) + '/' + String(rb.total)))
+        : 'recorded';
+    }
 
     function card(label, value, ok, sub) {
       return (
@@ -72,7 +133,8 @@
       card('Overall', overallOk ? 'ok' : 'attention', overallOk, 'schema ' + esc(s.schema || '—')) +
       card('Pulse', pulseOk ? 'alive' : 'down', pulseOk, 'count ' + esc(String(s.pulse && s.pulse.count != null ? s.pulse.count : '—'))) +
       card('Presence', presenceOk ? 'alive' : 'down', presenceOk, 'neuron loop') +
-      card('Continuity', contOk ? 'ok' : 'attention', contOk, 'gaps ' + esc(String(s.continuity && s.continuity.gaps != null ? s.continuity.gaps : '—')))
+      card('Continuity', contOk ? 'ok' : 'attention', contOk, 'gaps ' + esc(String(s.continuity && s.continuity.gaps != null ? s.continuity.gaps : '—'))) +
+      card('Self checks', scOk ? 'clear' : (sc && sc.writer_labels && sc.writer_labels.recorded && sc.runbook && sc.runbook.recorded ? 'suspect' : 'pending'), scOk, scSub)
     );
   }
 
