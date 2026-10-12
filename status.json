@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T13:44:11Z",
-  "updated_at_local": "2026-10-12T09:44:11-0400",
+  "updated_at": "2026-10-12T13:56:05Z",
+  "updated_at_local": "2026-10-12T09:56:05-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 32266,
-    "last": "2026-10-12T13:43:54.884326+00:00"
+    "count": 32289,
+    "last": "2026-10-12T13:55:56.375221+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-12-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 141,
-    "updated_at": "2026-10-12T08:47:18-04:00",
-    "last_move": "Gen 140 confirm blocked (no 2026-10-12 ritual record at 08:45). self_checks now carries ritual_due (today/pending/lat..."
+    "cycle": 142,
+    "updated_at": "2026-10-12T09:56:02-04:00",
+    "last_move": "Gen 141 confirm PASS: ritual_due=today on on-box+live board; writer_labels/runbook recorded true suspect false. Stamp..."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 0,
+    "ritual_age_h": 1,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
