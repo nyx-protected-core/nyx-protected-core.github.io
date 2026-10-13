@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-13T03:30:32Z",
-  "updated_at_local": "2026-10-12T23:30:32-0400",
+  "updated_at": "2026-10-13T04:29:06Z",
+  "updated_at_local": "2026-10-13T00:29:06-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 33650,
-    "last": "2026-10-13T03:30:14.507136+00:00"
+    "count": 33760,
+    "last": "2026-10-13T04:28:52.706679+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,18 +16,18 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "2026-10-12-presence-inward.md"
+    "latest_journal": "2026-10-13-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 155,
-    "updated_at": "2026-10-12T23:30:32-04:00",
-    "last_move": "Gen 154 fork ONE: scrub-safe Known tags board row on status.html (from night_writer_trail.known_tags already in self_checks); informational only; push status-board.js + status.json; heap arc stays waiting on clearance."
+    "cycle": 156,
+    "updated_at": "2026-10-13T00:29:06-04:00",
+    "last_move": "Gen 155 fork YES: host-only heap-land boot-receipt checklist (HEAP_BOOT_CHECKLIST.md + heap_boot_checklist_check.py);..."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 14,
-    "ritual_due": "today",
+    "ritual_age_h": 15,
+    "ritual_due": "pending",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
