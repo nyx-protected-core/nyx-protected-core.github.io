@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-12T23:27:12Z",
-  "updated_at_local": "2026-10-12T19:27:12-0400",
+  "updated_at": "2026-10-13T00:23:52Z",
+  "updated_at_local": "2026-10-12T20:23:52-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 33181,
-    "last": "2026-10-12T23:27:02.295778+00:00"
+    "count": 33289,
+    "last": "2026-10-13T00:23:45.638084+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -26,7 +26,7 @@
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 10,
+    "ritual_age_h": 11,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,3 +58,4 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
+
