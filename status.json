@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-13T05:30:27Z",
-  "updated_at_local": "2026-10-13T01:30:27-0400",
+  "updated_at": "2026-10-13T12:43:57Z",
+  "updated_at_local": "2026-10-13T08:43:57-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 33874,
-    "last": "2026-10-13T05:30:04.219317+00:00"
+    "count": 34692,
+    "last": "2026-10-13T12:43:46.342856+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,15 +19,15 @@
     "latest_journal": "2026-10-13-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 157,
-    "updated_at": "2026-10-13T01:30:27-04:00",
-    "last_move": "Gen 156 fork YES: heap hermetic boot-receipt driver (heap_boot_receipt.py nyx.heap_boot_receipt/v1; --selfcheck dry+v..."
+    "cycle": 164,
+    "updated_at": "2026-10-13T08:36:49-04:00",
+    "last_move": "Gen 163 fork YES keep braid deepen (gap contents). In-gap spend modes + arcs per between-hold gap (ledger) and braid aggregate; 2026-10-12 derive\u00d7408 execute\u00d7207 over 23 gaps; 2026-10-13 derive\u00d7144 execute\u00d772 over 8 gaps; every gap is derive\u00d718 execute\u00d79 across steer open question + alternating arc; live kernel untouched; planner double-derive vs leave-alone leads gen 164."
   },
   "self_checks": {
-    "ritual_at": "2026-10-12T08:50:19.642356-04:00",
+    "ritual_at": "2026-10-13T08:36:36.341927-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 16,
-    "ritual_due": "pending",
+    "ritual_age_h": 0,
+    "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
@@ -43,11 +43,11 @@
     "night_writer_trail": {
       "recorded": true,
       "nights": 7,
-      "end_day": "2026-10-11",
+      "end_day": "2026-10-12",
       "kinds": {
-        "untagged": 1,
+        "untagged": 2,
         "known": 1,
-        "no_writer_line": 2,
+        "no_writer_line": 1,
         "no_note": 3
       },
       "known_tags": {
