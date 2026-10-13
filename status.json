@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-13T00:23:52Z",
-  "updated_at_local": "2026-10-12T20:23:52-0400",
+  "updated_at": "2026-10-13T03:30:32Z",
+  "updated_at_local": "2026-10-12T23:30:32-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 33289,
-    "last": "2026-10-13T00:23:45.638084+00:00"
+    "count": 33650,
+    "last": "2026-10-13T03:30:14.507136+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-12-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 151,
-    "updated_at": "2026-10-12T18:38:02-04:00",
-    "last_move": "Gen 150 fork three: host-only SLEEP_HEAP_SELFTEST block (sleep_heap_contains/sleep_heap_check) in staged sleep_heap.c..."
+    "cycle": 155,
+    "updated_at": "2026-10-12T23:30:32-04:00",
+    "last_move": "Gen 154 fork ONE: scrub-safe Known tags board row on status.html (from night_writer_trail.known_tags already in self_checks); informational only; push status-board.js + status.json; heap arc stays waiting on clearance."
   },
   "self_checks": {
     "ritual_at": "2026-10-12T08:50:19.642356-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 11,
+    "ritual_age_h": 14,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,4 +58,3 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
-

@@ -3,6 +3,7 @@
  * Polls status.json every 30s; renders ok/attention + pulse/presence/continuity/autonomy/self_checks.
  * Cycle 140: self_checks block (ritual + writer_labels + runbook N/M).
  * Cycle 143: night_writer_trail kind tallies (scrub-safe counts).
+ * Cycle 155: known_tags detail row (scrub-safe counts/labels).
  */
 (function () {
   'use strict';
@@ -98,8 +99,16 @@
         ? ' <span style="color:var(--muted-dim)">· through ' + esc(String(nwt.end_day)) + '</span>'
         : '';
       html += row('Night trail', (parts.length ? parts.join(' · ') : esc('recorded')) + gap + end);
+      // Cycle 155: scrub-safe known_tags detail (counts/labels only; informational).
+      var tags = nwt.known_tags || {};
+      var tagParts = [];
+      Object.keys(tags).sort().forEach(function (k) {
+        tagParts.push(esc(k) + ' ' + esc(String(tags[k])));
+      });
+      html += row('Known tags', tagParts.length ? tagParts.join(' · ') : esc('none'));
     } else {
       html += row('Night trail', badge(false, '', 'not recorded'));
+      html += row('Known tags', badge(false, '', 'not recorded'));
     }
     return html;
   }
