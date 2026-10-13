@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-13T19:30:11Z",
-  "updated_at_local": "2026-10-13T15:30:11-0400",
+  "updated_at": "2026-10-13T20:21:29Z",
+  "updated_at_local": "2026-10-13T16:21:29-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 35197,
-    "last": "2026-10-13T19:29:52.445241+00:00"
+    "count": 35291,
+    "last": "2026-10-13T20:21:07.432664+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-13-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 169,
-    "updated_at": "2026-10-13T14:48:05-04:00",
-    "last_move": "Gen 168 fork answered YES Nyx OS: host-only bin_rule_check.py (34/48 /bin used, 14 free \u2265 8, FILE_MAX 1536); HEAP_BOO..."
+    "cycle": 170,
+    "updated_at": "2026-10-13T15:40:24-04:00",
+    "last_move": "Gen 169 fork answered natural-execute visibility: _touch_streak_presence writes sticky last_natural_execute_at/_silen..."
   },
   "self_checks": {
     "ritual_at": "2026-10-13T08:50:18.678624-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 6,
+    "ritual_age_h": 7,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,3 +58,4 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
+
