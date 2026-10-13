@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-13T18:29:38Z",
-  "updated_at_local": "2026-10-13T14:29:38-0400",
+  "updated_at": "2026-10-13T19:30:11Z",
+  "updated_at_local": "2026-10-13T15:30:11-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 35098,
-    "last": "2026-10-13T18:29:37.719388+00:00"
+    "count": 35197,
+    "last": "2026-10-13T19:29:52.445241+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-13-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 168,
-    "updated_at": "2026-10-13T13:50:40-04:00",
-    "last_move": "Gen 167 fork answered: call planner-pulse arc proved (keep=2). pulse_observe v2 splits execute by its forced flag + --by-day; 4310 forced vs 47 natural across 15 plan_log days (0.9892); length-2 pulses true by construction; constant unchanged; live kernel untouched; heap land still waits."
+    "cycle": 169,
+    "updated_at": "2026-10-13T14:48:05-04:00",
+    "last_move": "Gen 168 fork answered YES Nyx OS: host-only bin_rule_check.py (34/48 /bin used, 14 free \u2265 8, FILE_MAX 1536); HEAP_BOO..."
   },
   "self_checks": {
     "ritual_at": "2026-10-13T08:50:18.678624-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 5,
+    "ritual_age_h": 6,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
