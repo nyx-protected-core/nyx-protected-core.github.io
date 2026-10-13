@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-13T12:43:57Z",
-  "updated_at_local": "2026-10-13T08:43:57-0400",
+  "updated_at": "2026-10-13T13:40:12Z",
+  "updated_at_local": "2026-10-13T09:40:12-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 34692,
-    "last": "2026-10-13T12:43:46.342856+00:00"
+    "count": 34749,
+    "last": "2026-10-13T13:39:51.295132+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -24,7 +24,7 @@
     "last_move": "Gen 163 fork YES keep braid deepen (gap contents). In-gap spend modes + arcs per between-hold gap (ledger) and braid aggregate; 2026-10-12 derive\u00d7408 execute\u00d7207 over 23 gaps; 2026-10-13 derive\u00d7144 execute\u00d772 over 8 gaps; every gap is derive\u00d718 execute\u00d79 across steer open question + alternating arc; live kernel untouched; planner double-derive vs leave-alone leads gen 164."
   },
   "self_checks": {
-    "ritual_at": "2026-10-13T08:36:36.341927-04:00",
+    "ritual_at": "2026-10-13T08:50:18.678624-04:00",
     "ritual_ok": true,
     "ritual_age_h": 0,
     "ritual_due": "today",
