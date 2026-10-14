@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T12:22:01Z",
-  "updated_at_local": "2026-10-14T08:22:01-0400",
+  "updated_at": "2026-10-14T13:27:31Z",
+  "updated_at_local": "2026-10-14T09:27:31-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 37111,
-    "last": "2026-10-14T12:22:00.150341+00:00"
+    "count": 37239,
+    "last": "2026-10-14T13:27:23.115693+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,15 +19,15 @@
     "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 186,
-    "updated_at": "2026-10-14T07:36:13-04:00",
-    "last_move": "Gen 185 fork 2 answered: land_rehearse into /tmp/nyx-land-rehearse-c186 MATCH EXPECT 5dff1d89\u20268c7b; bin_rule --root -..."
+    "cycle": 187,
+    "updated_at": "2026-10-14T08:34:21-04:00",
+    "last_move": "Gen 186 fork 2 answered: land_rehearse size NOTE \u2192 counted gate when /tmp/nyx-land-rehearse-c186 exists (145/145, lan..."
   },
   "self_checks": {
-    "ritual_at": "2026-10-13T08:50:18.678624-04:00",
+    "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 23,
-    "ritual_due": "pending",
+    "ritual_age_h": 0,
+    "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
@@ -43,12 +43,12 @@
     "night_writer_trail": {
       "recorded": true,
       "nights": 7,
-      "end_day": "2026-10-12",
+      "end_day": "2026-10-13",
       "kinds": {
-        "untagged": 2,
+        "untagged": 3,
         "known": 1,
         "no_writer_line": 1,
-        "no_note": 3
+        "no_note": 2
       },
       "known_tags": {
         "routine_safety_net": 1
