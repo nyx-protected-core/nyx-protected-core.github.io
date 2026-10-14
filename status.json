@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-13T23:23:08Z",
-  "updated_at_local": "2026-10-13T19:23:08-0400",
+  "updated_at": "2026-10-14T00:17:50Z",
+  "updated_at_local": "2026-10-13T20:17:50-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 35637,
-    "last": "2026-10-13T23:23:02.448687+00:00"
+    "count": 35739,
+    "last": "2026-10-14T00:17:35.362817+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-13-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 173,
-    "updated_at": "2026-10-13T18:33:06-04:00",
-    "last_move": "Gen 172 fork answered scratch-apply: c171 rc_run_multi.diff was malformed (patch refused); regenerated via diff -u, a..."
+    "cycle": 174,
+    "updated_at": "2026-10-13T19:30:33-04:00",
+    "last_move": "Gen 173 fork answered C empty-member parse: staged sh.c gains fenced gate_parse() that refuses empty member, leading/..."
   },
   "self_checks": {
     "ritual_at": "2026-10-13T08:50:18.678624-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 10,
+    "ritual_age_h": 11,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
