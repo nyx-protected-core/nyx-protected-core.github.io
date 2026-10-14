@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T15:20:57Z",
-  "updated_at_local": "2026-10-14T11:20:57-0400",
+  "updated_at": "2026-10-14T16:20:56Z",
+  "updated_at_local": "2026-10-14T12:20:56-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 37461,
-    "last": "2026-10-14T15:20:44.285229+00:00"
+    "count": 37578,
+    "last": "2026-10-14T16:20:31.499991+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 189,
-    "updated_at": "2026-10-14T10:39:20-04:00",
-    "last_move": "Gen 188 fork 2 answered: heap_boot_checklist_check.py auto-invokes land_rehearse_refresh.py (refresh-if-absent, not -..."
+    "cycle": 190,
+    "updated_at": "2026-10-14T11:39:21-04:00",
+    "last_move": "Gen 189 fork answered via tooling (not full-day read"
   },
   "self_checks": {
     "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 2,
+    "ritual_age_h": 3,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
