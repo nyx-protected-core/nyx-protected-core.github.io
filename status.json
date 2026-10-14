@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T21:22:19Z",
-  "updated_at_local": "2026-10-14T17:22:19-0400",
+  "updated_at": "2026-10-14T22:17:49Z",
+  "updated_at_local": "2026-10-14T18:17:49-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 38163,
-    "last": "2026-10-14T21:21:55.807213+00:00"
+    "count": 38271,
+    "last": "2026-10-14T22:17:28.750146+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 195,
-    "updated_at": "2026-10-14T16:30:02-04:00",
-    "last_move": "Gen 194 confirm-on-stall made automatic: stall_attrib --split-verdict labels post-seam stall ticks split_held/split_l..."
+    "cycle": 196,
+    "updated_at": "2026-10-14T17:32:56-04:00",
+    "last_move": "Gen 195 split verdict flipped to held on the first real post-seam stall (16:57 ET, 143 s, loadavg 0.08), but that tic..."
   },
   "self_checks": {
     "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 8,
+    "ritual_age_h": 9,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
