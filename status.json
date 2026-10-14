@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T16:20:56Z",
-  "updated_at_local": "2026-10-14T12:20:56-0400",
+  "updated_at": "2026-10-14T17:26:35Z",
+  "updated_at_local": "2026-10-14T13:26:35-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 37578,
-    "last": "2026-10-14T16:20:31.499991+00:00"
+    "count": 37707,
+    "last": "2026-10-14T17:26:25.209572+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 190,
-    "updated_at": "2026-10-14T11:39:21-04:00",
-    "last_move": "Gen 189 fork answered via tooling (not full-day read"
+    "cycle": 191,
+    "updated_at": "2026-10-14T12:30:13-04:00",
+    "last_move": "Gen 190 fork advanced on a completed day: pulse_observe v4 bounded --day/--yesterday windows + sticky_reconcile vs c1..."
   },
   "self_checks": {
     "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 3,
+    "ritual_age_h": 4,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
