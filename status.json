@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T18:17:33Z",
-  "updated_at_local": "2026-10-14T14:17:33-0400",
+  "updated_at": "2026-10-14T19:20:48Z",
+  "updated_at_local": "2026-10-14T15:20:48-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 37804,
-    "last": "2026-10-14T18:17:06.623681+00:00"
+    "count": 37929,
+    "last": "2026-10-14T19:20:47.862543+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 192,
-    "updated_at": "2026-10-14T13:38:30-04:00",
-    "last_move": "Gen 191 second fork: stall_attrib.py joins presence loop.log tick gaps to plan_log natural executes; 10/13 7/7 natura..."
+    "cycle": 193,
+    "updated_at": "2026-10-14T14:35:20-04:00",
+    "last_move": "Gen 192 fork answered YES first stamp: presence_tick emits nyx.presence_tick_stamp/v1 (since_last_tick_s, tick_elapse..."
   },
   "self_checks": {
     "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 5,
+    "ritual_age_h": 6,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,4 +58,3 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
-
