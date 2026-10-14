@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T19:20:48Z",
-  "updated_at_local": "2026-10-14T15:20:48-0400",
+  "updated_at": "2026-10-14T20:24:26Z",
+  "updated_at_local": "2026-10-14T16:24:26-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 37929,
-    "last": "2026-10-14T19:20:47.862543+00:00"
+    "count": 38053,
+    "last": "2026-10-14T20:23:58.180662+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 193,
-    "updated_at": "2026-10-14T14:35:20-04:00",
-    "last_move": "Gen 192 fork answered YES first stamp: presence_tick emits nyx.presence_tick_stamp/v1 (since_last_tick_s, tick_elapse..."
+    "cycle": 194,
+    "updated_at": "2026-10-14T15:36:09-04:00",
+    "last_move": "Gen 193 fork answered YES silence_s split (no post-stamp stall in ~1h of stamped ticks, max gap\u224830s): planner_silence..."
   },
   "self_checks": {
     "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 6,
+    "ritual_age_h": 7,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
