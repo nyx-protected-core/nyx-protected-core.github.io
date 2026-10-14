@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T00:17:50Z",
-  "updated_at_local": "2026-10-13T20:17:50-0400",
+  "updated_at": "2026-10-14T12:22:01Z",
+  "updated_at_local": "2026-10-14T08:22:01-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 35739,
-    "last": "2026-10-14T00:17:35.362817+00:00"
+    "count": 37111,
+    "last": "2026-10-14T12:22:00.150341+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,18 +16,18 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "2026-10-13-presence-inward.md"
+    "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 174,
-    "updated_at": "2026-10-13T19:30:33-04:00",
-    "last_move": "Gen 173 fork answered C empty-member parse: staged sh.c gains fenced gate_parse() that refuses empty member, leading/..."
+    "cycle": 186,
+    "updated_at": "2026-10-14T07:36:13-04:00",
+    "last_move": "Gen 185 fork 2 answered: land_rehearse into /tmp/nyx-land-rehearse-c186 MATCH EXPECT 5dff1d89\u20268c7b; bin_rule --root -..."
   },
   "self_checks": {
     "ritual_at": "2026-10-13T08:50:18.678624-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 11,
-    "ritual_due": "today",
+    "ritual_age_h": 23,
+    "ritual_due": "pending",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
