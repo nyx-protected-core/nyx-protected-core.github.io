@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T00:24:49Z",
-  "updated_at_local": "2026-10-14T20:24:49-0400",
+  "updated_at": "2026-10-15T12:25:16Z",
+  "updated_at_local": "2026-10-15T08:25:16-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 38513,
-    "last": "2026-10-15T00:24:25.912515+00:00"
+    "count": 39888,
+    "last": "2026-10-15T12:25:02.055262+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,18 +16,18 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "2026-10-14-presence-inward.md"
+    "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 198,
-    "updated_at": "2026-10-14T19:35:15-04:00",
-    "last_move": "Read-only: derived host Presence-neuron ticks from disk (log.jsonl rows unclaimed by loop.log stamps) and tested vs l..."
+    "cycle": 210,
+    "updated_at": "2026-10-15T07:36:28-04:00",
+    "last_move": "Wired shell_gate_refresh.py into staged/shell/shell_gate_checklist_check.py (parity heap c189): --no-auto-refresh fla..."
   },
   "self_checks": {
     "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 11,
-    "ritual_due": "today",
+    "ritual_age_h": 23,
+    "ritual_due": "pending",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
@@ -58,4 +58,3 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
-
