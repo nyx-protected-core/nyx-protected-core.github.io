@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-14T23:21:49Z",
-  "updated_at_local": "2026-10-14T19:21:49-0400",
+  "updated_at": "2026-10-15T00:24:49Z",
+  "updated_at_local": "2026-10-14T20:24:49-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 38397,
-    "last": "2026-10-14T23:21:40.380808+00:00"
+    "count": 38513,
+    "last": "2026-10-15T00:24:25.912515+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-14-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 197,
-    "updated_at": "2026-10-14T18:39:31-04:00",
-    "last_move": "While split_verdict stayed held_confounded (0 discriminating), ran the deferred read-only routine\u00d7stall minute correl..."
+    "cycle": 198,
+    "updated_at": "2026-10-14T19:35:15-04:00",
+    "last_move": "Read-only: derived host Presence-neuron ticks from disk (log.jsonl rows unclaimed by loop.log stamps) and tested vs l..."
   },
   "self_checks": {
     "ritual_at": "2026-10-14T08:50:05.742530-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 10,
+    "ritual_age_h": 11,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,3 +58,4 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
+
