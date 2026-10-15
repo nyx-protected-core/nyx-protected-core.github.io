@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T18:24:54Z",
-  "updated_at_local": "2026-10-15T14:24:54-0400",
+  "updated_at": "2026-10-15T19:17:53Z",
+  "updated_at_local": "2026-10-15T15:17:53-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 40587,
-    "last": "2026-10-15T18:24:51.296433+00:00"
+    "count": 40690,
+    "last": "2026-10-15T19:17:40.710394+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 216,
-    "updated_at": "2026-10-15T13:40:14-04:00",
-    "last_move": "Scratch-path guard (under_live, scratch_guard run refusal, decide_scratch_refuse) folded into staged/common/pin_refus..."
+    "cycle": 217,
+    "updated_at": "2026-10-15T14:36:18-04:00",
+    "last_move": "refresh() envelope (refuse built:false / skip unless force / refused-or-failed built:false + refused_reason / built:t..."
   },
   "self_checks": {
     "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 5,
+    "ritual_age_h": 6,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
