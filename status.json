@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T12:25:16Z",
-  "updated_at_local": "2026-10-15T08:25:16-0400",
+  "updated_at": "2026-10-15T13:30:45Z",
+  "updated_at_local": "2026-10-15T09:30:45-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 39888,
-    "last": "2026-10-15T12:25:02.055262+00:00"
+    "count": 40017,
+    "last": "2026-10-15T13:30:38.031728+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,15 +19,15 @@
     "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 210,
-    "updated_at": "2026-10-15T07:36:28-04:00",
-    "last_move": "Wired shell_gate_refresh.py into staged/shell/shell_gate_checklist_check.py (parity heap c189): --no-auto-refresh fla..."
+    "cycle": 211,
+    "updated_at": "2026-10-15T08:29:30-04:00",
+    "last_move": "shell_gate_checklist_check.py sha-pins staged rc_run_multi.diff (42a27a1d\u2026a3a5), rc_seed_c175.diff (c7edc3a4\u2026b786), l..."
   },
   "self_checks": {
-    "ritual_at": "2026-10-14T08:50:05.742530-04:00",
+    "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 23,
-    "ritual_due": "pending",
+    "ritual_age_h": 0,
+    "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
@@ -43,12 +43,12 @@
     "night_writer_trail": {
       "recorded": true,
       "nights": 7,
-      "end_day": "2026-10-13",
+      "end_day": "2026-10-14",
       "kinds": {
-        "untagged": 3,
+        "untagged": 4,
         "known": 1,
         "no_writer_line": 1,
-        "no_note": 2
+        "no_note": 1
       },
       "known_tags": {
         "routine_safety_net": 1
