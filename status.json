@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T20:24:21Z",
-  "updated_at_local": "2026-10-15T16:24:21-0400",
+  "updated_at": "2026-10-15T21:25:26Z",
+  "updated_at_local": "2026-10-15T17:25:26-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 40817,
-    "last": "2026-10-15T20:24:15.399243+00:00"
+    "count": 40935,
+    "last": "2026-10-15T21:25:09.999499+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 218,
-    "updated_at": "2026-10-15T15:36:39-04:00",
-    "last_move": "Closed the shared-module factoring arc (c215\u2013c217): staged/common/OWNERSHIP.md maps what pin_refusal.py owns (8 shape..."
+    "cycle": 219,
+    "updated_at": "2026-10-15T16:35:34-04:00",
+    "last_move": "Wired cycle-218 ownership_check.py + OWNERSHIP.md into both checklists: sha-pinned and run for ok 10/10 so the pin_re..."
   },
   "self_checks": {
     "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 7,
+    "ritual_age_h": 8,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,4 +58,3 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
-
