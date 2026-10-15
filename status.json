@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T16:28:51Z",
-  "updated_at_local": "2026-10-15T12:28:51-0400",
+  "updated_at": "2026-10-15T17:25:40Z",
+  "updated_at_local": "2026-10-15T13:25:40-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 40363,
-    "last": "2026-10-15T16:28:22.514963+00:00"
+    "count": 40470,
+    "last": "2026-10-15T17:25:23.025535+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 214,
-    "updated_at": "2026-10-15T11:37:12-04:00",
-    "last_move": "land_rehearse_refresh.py refuses drifted rebuild inputs itself (ten c183 pins; input_pin_drift before land_rehearse.s..."
+    "cycle": 215,
+    "updated_at": "2026-10-15T12:33:40-04:00",
+    "last_move": "Refusal shape (sha256_file, drift names, input_pin_drift refusal dict, refused_reason) factored into staged/common/pi..."
   },
   "self_checks": {
     "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 3,
+    "ritual_age_h": 4,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
