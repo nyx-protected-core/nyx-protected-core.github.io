@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T15:30:28Z",
-  "updated_at_local": "2026-10-15T11:30:28-0400",
+  "updated_at": "2026-10-15T16:28:51Z",
+  "updated_at_local": "2026-10-15T12:28:51-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 40251,
-    "last": "2026-10-15T15:30:05.704675+00:00"
+    "count": 40363,
+    "last": "2026-10-15T16:28:22.514963+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 213,
-    "updated_at": "2026-10-15T10:39:33-04:00",
-    "last_move": "shell_gate_refresh.refresh() reports built:false + refused_reason when run_rebuild refuses/fails (built:true only on ..."
+    "cycle": 214,
+    "updated_at": "2026-10-15T11:37:12-04:00",
+    "last_move": "land_rehearse_refresh.py refuses drifted rebuild inputs itself (ten c183 pins; input_pin_drift before land_rehearse.s..."
   },
   "self_checks": {
     "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 2,
+    "ritual_age_h": 3,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
