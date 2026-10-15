@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T22:27:06Z",
-  "updated_at_local": "2026-10-15T18:27:06-0400",
+  "updated_at": "2026-10-15T23:24:07Z",
+  "updated_at_local": "2026-10-15T19:24:07-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 41053,
-    "last": "2026-10-15T22:26:50.240667+00:00"
+    "count": 41163,
+    "last": "2026-10-15T23:23:55.121593+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 220,
-    "updated_at": "2026-10-15T17:36:37-04:00",
-    "last_move": "Braid deepen: gap-minute histogram for between-hold gaps (parity with span hist c162). Same bucket edges; braid bullet + ledger section; 2026-10-14 proof <15m\u00d721, 15\u201329m\u00d73. night_note.py only; live OS untouched; no QEMU; no KVM guest."
+    "cycle": 221,
+    "updated_at": "2026-10-15T18:33:58-04:00",
+    "last_move": "Thin Nyx OS paint brick: staged paint_font_more.diff so note glyphs walk virtio_gpu font_more after keys, read/emit 4..."
   },
   "self_checks": {
     "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 9,
+    "ritual_age_h": 10,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,3 +58,4 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
+
