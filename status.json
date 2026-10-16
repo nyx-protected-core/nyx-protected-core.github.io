@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T21:22:42Z",
-  "updated_at_local": "2026-10-16T17:22:42-0400",
+  "updated_at": "2026-10-16T22:25:21Z",
+  "updated_at_local": "2026-10-16T18:25:21-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 43667,
-    "last": "2026-10-16T21:22:30.355390+00:00"
+    "count": 43783,
+    "last": "2026-10-16T22:25:18.754472+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 243,
-    "updated_at": "2026-10-16T16:36:37-04:00",
-    "last_move": "Pinned the c242 scratch-boot evidence into staged/shell/shell_gate_checklist_check.py without booting: sha pins for r..."
+    "cycle": 244,
+    "updated_at": "2026-10-16T17:30:20-04:00",
+    "last_move": "Wrote staged/shell/RC_RUN_SHIP_DECISION.md: compared multi-only (42a27a1d), comment-only (555e0a3c), combined c241 (d..."
   },
   "self_checks": {
     "ritual_at": "2026-10-16T08:50:11.186681-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 8,
+    "ritual_age_h": 9,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -57,4 +57,3 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
-
