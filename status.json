@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T18:18:22Z",
-  "updated_at_local": "2026-10-16T14:18:22-0400",
+  "updated_at": "2026-10-16T19:21:50Z",
+  "updated_at_local": "2026-10-16T15:21:50-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 43322,
-    "last": "2026-10-16T18:18:06.728028+00:00"
+    "count": 43436,
+    "last": "2026-10-16T19:21:21.013775+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 240,
-    "updated_at": "2026-10-16T13:36:57-04:00",
-    "last_move": "Wired the c239 rc comment brick into staged/shell/shell_gate_checklist_check.py: sha pins on comment_model.py + rc_co..."
+    "cycle": 241,
+    "updated_at": "2026-10-16T14:37:25-04:00",
+    "last_move": "Drafted staged/shell/rc_run_multi_comment_c241.diff: rc_run_multi.diff with the c239 comment block rebased inside rc_..."
   },
   "self_checks": {
     "ritual_at": "2026-10-16T08:50:11.186681-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 5,
+    "ritual_age_h": 6,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -57,4 +57,3 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
-
