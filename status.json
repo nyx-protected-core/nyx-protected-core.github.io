@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T14:22:49Z",
-  "updated_at_local": "2026-10-16T10:22:49-0400",
+  "updated_at": "2026-10-16T15:24:47Z",
+  "updated_at_local": "2026-10-16T11:24:47-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 42868,
-    "last": "2026-10-16T14:22:46.431277+00:00"
+    "count": 42987,
+    "last": "2026-10-16T15:24:33.647663+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 236,
-    "updated_at": "2026-10-16T09:36:10-04:00",
-    "last_move": "Staged paint_cell_peek.diff (8x8 first-glyph cell scan) composing on live/l1/lt; paint_ink_check.py v2 PASS 22/22 pro..."
+    "cycle": 237,
+    "updated_at": "2026-10-16T10:34:52-04:00",
+    "last_move": "paint_apply.py learned the cp (cell-peek) layer from c236: layers sorted l1,l2,lt,cp; --layers ship now l1+lt+cp (lt ..."
   },
   "self_checks": {
     "ritual_at": "2026-10-16T08:50:11.186681-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 1,
+    "ritual_age_h": 2,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
