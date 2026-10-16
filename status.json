@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T00:18:21Z",
-  "updated_at_local": "2026-10-15T20:18:21-0400",
+  "updated_at": "2026-10-16T12:26:52Z",
+  "updated_at_local": "2026-10-16T08:26:52-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 41260,
-    "last": "2026-10-16T00:16:54.868672+00:00"
+    "count": 42648,
+    "last": "2026-10-16T12:26:42.966404+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -16,18 +16,18 @@
   "continuity": {
     "ok": true,
     "gaps": 0,
-    "latest_journal": "2026-10-15-presence-inward.md"
+    "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 222,
-    "updated_at": "2026-10-15T19:35:28-04:00",
-    "last_move": "Thin Nyx OS paint brick: staged paint_caps_layer.diff on top of c221 font_more so paint more tracks post-caps console..."
+    "cycle": 234,
+    "updated_at": "2026-10-16T07:31:19-04:00",
+    "last_move": "Heap-pinned paint_tolerant_check.py at the ship gate (path+sha+PASS 18/18). RUNBOOK/SHIP_PLAN/HEAP/SCHED name lt pref..."
   },
   "self_checks": {
     "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 11,
-    "ritual_due": "today",
+    "ritual_age_h": 23,
+    "ritual_due": "pending",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
