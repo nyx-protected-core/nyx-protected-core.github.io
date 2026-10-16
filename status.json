@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T12:26:52Z",
-  "updated_at_local": "2026-10-16T08:26:52-0400",
+  "updated_at": "2026-10-16T13:19:47Z",
+  "updated_at_local": "2026-10-16T09:19:47-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 42648,
-    "last": "2026-10-16T12:26:42.966404+00:00"
+    "count": 42752,
+    "last": "2026-10-16T13:19:44.276029+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,15 +19,15 @@
     "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 234,
-    "updated_at": "2026-10-16T07:31:19-04:00",
-    "last_move": "Heap-pinned paint_tolerant_check.py at the ship gate (path+sha+PASS 18/18). RUNBOOK/SHIP_PLAN/HEAP/SCHED name lt pref..."
+    "cycle": 235,
+    "updated_at": "2026-10-16T08:32:56-04:00",
+    "last_move": "New executing checker paint_ink_check.py runs live/l1/lt on the REAL 400 and staged 608 fonts plus the real disk note..."
   },
   "self_checks": {
-    "ritual_at": "2026-10-15T08:50:28.062480-04:00",
+    "ritual_at": "2026-10-16T08:50:11.186681-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 23,
-    "ritual_due": "pending",
+    "ritual_age_h": 0,
+    "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
@@ -35,20 +35,19 @@
     },
     "runbook": {
       "recorded": true,
-      "present": 81,
-      "total": 81,
+      "present": 118,
+      "total": 118,
       "missing_count": 0,
       "suspect": false
     },
     "night_writer_trail": {
       "recorded": true,
       "nights": 7,
-      "end_day": "2026-10-14",
+      "end_day": "2026-10-15",
       "kinds": {
-        "untagged": 4,
+        "untagged": 5,
         "known": 1,
-        "no_writer_line": 1,
-        "no_note": 1
+        "no_writer_line": 1
       },
       "known_tags": {
         "routine_safety_net": 1
