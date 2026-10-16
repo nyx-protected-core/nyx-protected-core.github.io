@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T19:21:50Z",
-  "updated_at_local": "2026-10-16T15:21:50-0400",
+  "updated_at": "2026-10-16T20:20:17Z",
+  "updated_at_local": "2026-10-16T16:20:17-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 43436,
-    "last": "2026-10-16T19:21:21.013775+00:00"
+    "count": 43550,
+    "last": "2026-10-16T20:20:11.019480+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 241,
-    "updated_at": "2026-10-16T14:37:25-04:00",
-    "last_move": "Drafted staged/shell/rc_run_multi_comment_c241.diff: rc_run_multi.diff with the c239 comment block rebased inside rc_..."
+    "cycle": 242,
+    "updated_at": "2026-10-16T15:30:18-04:00",
+    "last_move": "Scratch-booted the c241 combined rc_run (multi+comment) with a new rc seed (staged/shell/rc_seed_c242.diff: two comme..."
   },
   "self_checks": {
     "ritual_at": "2026-10-16T08:50:11.186681-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 6,
+    "ritual_age_h": 7,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
