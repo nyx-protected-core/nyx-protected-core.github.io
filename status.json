@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T16:23:25Z",
-  "updated_at_local": "2026-10-16T12:23:25-0400",
+  "updated_at": "2026-10-16T17:18:28Z",
+  "updated_at_local": "2026-10-16T13:18:28-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 43099,
-    "last": "2026-10-16T16:23:10.535147+00:00"
+    "count": 43206,
+    "last": "2026-10-16T17:18:19.446637+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 238,
-    "updated_at": "2026-10-16T11:32:24-04:00",
-    "last_move": "Landed journal/2026-10-16-hold-spans.md (12 windows, 11 gaps) from presence-inward; created journal/2026-10-16-night...."
+    "cycle": 239,
+    "updated_at": "2026-10-16T12:35:21-04:00",
+    "last_move": "Staged Nyx OS shell host brick: rc comment lines. staged/shell/rc_comment_c239.diff (4 lines at head of rc_run: first..."
   },
   "self_checks": {
     "ritual_at": "2026-10-16T08:50:11.186681-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 3,
+    "ritual_age_h": 4,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
