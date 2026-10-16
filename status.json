@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-16T22:25:21Z",
-  "updated_at_local": "2026-10-16T18:25:21-0400",
+  "updated_at": "2026-10-16T23:21:43Z",
+  "updated_at_local": "2026-10-16T19:21:43-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 43783,
-    "last": "2026-10-16T22:25:18.754472+00:00"
+    "count": 43891,
+    "last": "2026-10-16T23:21:30.251392+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-16-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 244,
-    "updated_at": "2026-10-16T17:30:20-04:00",
-    "last_move": "Wrote staged/shell/RC_RUN_SHIP_DECISION.md: compared multi-only (42a27a1d), comment-only (555e0a3c), combined c241 (d..."
+    "cycle": 245,
+    "updated_at": "2026-10-16T18:32:23-04:00",
+    "last_move": "Booted [path] (live tree + combined c241 diff only, kernel.c unchanged, sh.bin 3600 B) via scratch_b..."
   },
   "self_checks": {
     "ritual_at": "2026-10-16T08:50:11.186681-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 9,
+    "ritual_age_h": 10,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
