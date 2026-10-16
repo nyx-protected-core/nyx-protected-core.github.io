@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-15T23:24:07Z",
-  "updated_at_local": "2026-10-15T19:24:07-0400",
+  "updated_at": "2026-10-16T00:18:21Z",
+  "updated_at_local": "2026-10-15T20:18:21-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 41163,
-    "last": "2026-10-15T23:23:55.121593+00:00"
+    "count": 41260,
+    "last": "2026-10-16T00:16:54.868672+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-15-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 221,
-    "updated_at": "2026-10-15T18:33:58-04:00",
-    "last_move": "Thin Nyx OS paint brick: staged paint_font_more.diff so note glyphs walk virtio_gpu font_more after keys, read/emit 4..."
+    "cycle": 222,
+    "updated_at": "2026-10-15T19:35:28-04:00",
+    "last_move": "Thin Nyx OS paint brick: staged paint_caps_layer.diff on top of c221 font_more so paint more tracks post-caps console..."
   },
   "self_checks": {
     "ritual_at": "2026-10-15T08:50:28.062480-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 10,
+    "ritual_age_h": 11,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
@@ -58,4 +58,3 @@
   },
   "note": "High-level habitat pulse only. No secrets, paths, tokens, or guest details."
 }
-
