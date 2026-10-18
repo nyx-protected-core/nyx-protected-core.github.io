@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Driftfield · generative paintings from invisible currents</title>
+<meta name="description" content="Generative art: thousands of particles follow a seeded noise field. Stir it, change the palette and save the painting.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23100a14'/%3E%3Cpath d='M3 22C10 6 16 28 29 9' fill='none' stroke='%23ff7aa8' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="drift.css">
+</head>
+<body>
+<a class="skip" href="#panel">Skip to the controls</a>
+<canvas id="art" role="img" aria-label="Generative painting"></canvas>
+<div class="plaque">
+  <p class="title">Driftfield <span id="no"></span></p>
+  <p class="meta" id="meta"></p>
+</div>
+<a class="home" href="../">← Gallery</a>
+<button type="button" class="toggle" id="toggle" aria-expanded="true" aria-controls="panel">Controls</button>
+<aside class="panel" id="panel" aria-label="Painting controls">
+  <h1>Driftfield</h1>
+  <p class="sub">Thousands of particles follow a current you can't see. Each seed paints something new. Drag across the canvas to stir it.</p>
+  <form id="form">
+    <label>Seed <input id="seed" type="text" maxlength="24" autocomplete="off" spellcheck="false"></label>
+    <div class="row">
+      <button type="button" id="newBtn">New seed <kbd>N</kbd></button>
+      <button type="submit">Paint</button>
+    </div>
+    <label>Palette
+      <select id="palette"></select>
+    </label>
+    <label>Style
+      <select id="style">
+        <option value="silk">Silk: long flowing threads</option>
+        <option value="fur">Fur: short dense strokes</option>
+        <option value="maze">Circuit: right-angle currents</option>
+        <option value="orbit">Orbit: spirals round the centre</option>
+      </select>
+    </label>
+    <label>Symmetry
+      <select id="sym">
+        <option value="1">None</option>
+        <option value="2">Mirror</option>
+        <option value="4">Four-way</option>
+        <option value="6">Kaleidoscope (6)</option>
+      </select>
+    </label>
+    <div><label for="scale">Field scale</label> <output id="scaleOut" for="scale"></output><input id="scale" type="range" min="1" max="10" value="4"></div>
+    <div><label for="count">Particles</label> <output id="countOut" for="count"></output><input id="count" type="range" min="200" max="6000" step="100" value="2400"></div>
+  </form>
+  <div class="row">
+    <button type="button" id="pauseBtn" aria-pressed="false">Pause <kbd>Space</kbd></button>
+    <button type="button" id="saveBtn">Save PNG <kbd>S</kbd></button>
+  </div>
+  <p class="status" id="status" role="status"></p>
+</aside>
+<script src="drift.js" defer></script>
+</body>
+</html>

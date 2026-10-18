@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitflip · a puzzle made of XOR</title>
+<meta name="description" content="Every press XORs a cross of bits. Clear the whole register to zero in as few moves as you can.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2306101f'/%3E%3Ctext x='16' y='23' font-family='monospace' font-weight='700' font-size='20' text-anchor='middle' fill='%237ab8ff'%3E1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="bitflip.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to the board</a>
+<canvas id="fx" aria-hidden="true"></canvas>
+<header class="top">
+  <a class="home" href="../">← Gallery</a>
+  <h1><span class="b">bit</span>flip</h1>
+</header>
+<main class="wrap">
+  <section class="hud" aria-label="Game status">
+    <div><span class="k">Level</span><span class="v" id="level">1</span></div>
+    <div><span class="k">Moves</span><span class="v" id="moves">0</span></div>
+    <div><span class="k">Par</span><span class="v" id="par">0</span></div>
+    <div><span class="k">Bits set</span><span class="v" id="ones">0</span></div>
+  </section>
+  <p class="rule">Pressing a cell <strong>XORs</strong> it and its four neighbours, so each of those bits flips. Clear the board to <code>0</code>.</p>
+  <div class="arena">
+    <div id="board" class="board" role="grid" aria-label="Puzzle board"></div>
+    <ol class="regs" id="regs" title="Each row as a binary number"></ol>
+  </div>
+  <p id="say" class="say" role="status" aria-live="polite"></p>
+  <div class="controls">
+    <button type="button" id="undo">Undo <kbd>U</kbd></button>
+    <button type="button" id="reset">Restart <kbd>R</kbd></button>
+    <button type="button" id="hint">Hint <kbd>H</kbd></button>
+    <button type="button" id="next" class="primary" hidden>Next level →</button>
+  </div>
+  <details class="more">
+    <summary>Modes and the maths</summary>
+    <div class="opts">
+      <label class="chk"><input type="checkbox" id="wrap"> Wrap-around edges (the board is a torus)</label>
+      <label>Jump to level <input type="number" id="jump" min="1" max="99" value="1" inputmode="numeric"></label>
+      <button type="button" id="random">Random puzzle</button>
+    </div>
+    <p>Every press is its own undo, because XOR twice is nothing (<code>a ⊕ b ⊕ b = a</code>). And the order of presses never matters. So a solution is just a set of cells, each pressed once or not at all.</p>
+    <p>That turns the puzzle into linear algebra over GF(2), the arithmetic of a single bit. The hint button solves the equations with Gaussian elimination, then picks the shortest answer. On a 5×5 board some patterns can't be solved at all, but every puzzle here is built from real presses, so it always has an answer.</p>
+  </details>
+</main>
+<script src="bitflip.js" defer></script>
+</body>
+</html>

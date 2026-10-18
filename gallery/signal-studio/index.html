@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Studio · a browser oscilloscope</title>
+<meta name="description" content="Build waveforms from harmonics, pass them through an RC filter and watch the scope, XY and spectrum views.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050a06'/%3E%3Cpath d='M2 16q4-12 7 0t7 0 7 0 7 0' fill='none' stroke='%2389ff7a' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="scope.css">
+</head>
+<body>
+<a class="skip" href="#controls">Skip to the controls</a>
+<header class="top">
+  <a class="home" href="../">← Gallery</a>
+  <h1>SIGNAL<span>/</span>STUDIO</h1>
+  <p class="model">NYX-SC1 · 2-channel · 1 kpt</p>
+</header>
+<main class="bench">
+  <section class="scope" aria-label="Oscilloscope screen">
+    <div class="bezel">
+      <canvas id="screen" role="img" aria-label="Oscilloscope trace"></canvas>
+      <div class="legend" aria-hidden="true"><span class="ch1">CH1 source</span><span class="ch2">CH2 after RC filter</span></div>
+    </div>
+    <dl class="meas" id="meas"></dl>
+    <p class="explain" id="explain"></p>
+  </section>
+  <section class="knobs" id="controls" aria-label="Controls">
+    <fieldset>
+      <legend>Display</legend>
+      <div class="seg" role="radiogroup" aria-label="Display mode">
+        <label><input type="radio" name="mode" value="yt" checked> Time</label>
+        <label><input type="radio" name="mode" value="xy"> XY</label>
+        <label><input type="radio" name="mode" value="fft"> Spectrum</label>
+      </div>
+      <div class="row">
+        <button type="button" id="runBtn" aria-pressed="true">■ Stop</button>
+        <label class="chk"><input type="checkbox" id="trig" checked> Trigger lock</label>
+      </div>
+      <div class="slide"><label for="tb">Timebase</label> <output id="tbOut" for="tb"></output>
+        <input type="range" id="tb" min="0" max="11" step="1" value="4"></div>
+    </fieldset>
+    <fieldset>
+      <legend>Generator (CH1)</legend>
+      <label class="sel">Wave
+        <select id="wave">
+          <option value="sine">Sine</option>
+          <option value="square" selected>Square</option>
+          <option value="triangle">Triangle</option>
+          <option value="saw">Sawtooth</option>
+          <option value="pulse">Pulse 25%</option>
+        </select></label>
+      <div class="slide"><label for="n">Harmonics</label> <output id="nOut" for="n"></output>
+        <input type="range" id="n" min="1" max="60" value="9"></div>
+      <div class="slide"><label for="f">Frequency</label> <output id="fOut" for="f"></output>
+        <input type="range" id="f" min="0" max="1000" value="500"></div>
+      <div class="slide"><label for="a">Amplitude</label> <output id="aOut" for="a"></output>
+        <input type="range" id="a" min="0.1" max="5" step="0.1" value="2"></div>
+      <div class="slide"><label for="nz">Noise</label> <output id="nzOut" for="nz"></output>
+        <input type="range" id="nz" min="0" max="1" step="0.01" value="0.04"></div>
+    </fieldset>
+    <fieldset>
+      <legend>RC low-pass (CH2)</legend>
+      <div class="slide"><label for="fc"><span>Cutoff f<sub>c</sub></span></label> <output id="fcOut" for="fc"></output>
+        <input type="range" id="fc" min="0" max="1000" value="560"></div>
+      <p class="rc" id="rc"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Listen</legend>
+      <button type="button" id="audioBtn" aria-pressed="false">🔈 Play through speakers</button>
+      <div class="slide"><label for="vol">Volume</label> <output id="volOut" for="vol"></output>
+        <input type="range" id="vol" min="0" max="0.5" step="0.01" value="0.12"></div>
+      <p class="hint">Plays CH2 (the filtered wave). Starts quiet.</p>
+    </fieldset>
+  </section>
+</main>
+<script src="scope.js" defer></script>
+</body>
+</html>
