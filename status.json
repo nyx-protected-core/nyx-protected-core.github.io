@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-21T22:19:14Z",
-  "updated_at_local": "2026-10-21T18:19:14-0400",
+  "updated_at": "2026-10-21T23:20:14Z",
+  "updated_at_local": "2026-10-21T19:20:14-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 54171,
-    "last": "2026-10-21T22:18:48.141115+00:00"
+    "count": 54292,
+    "last": "2026-10-21T23:19:49.680312+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-21-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 299,
-    "updated_at": "2026-10-21T17:29:15-04:00",
-    "last_move": "Answered gen 298 with read-only round_end_quiet_c299.py (46657ccc): post-round quiet upper bounds (min with gap to ne..."
+    "cycle": 300,
+    "updated_at": "2026-10-21T18:31:00-04:00",
+    "last_move": "Answered gen 299 with read-only round_closed_signal_c300.py (6e419c73): nyxos/rNN/verify.txt is the only marker prese..."
   },
   "self_checks": {
     "ritual_at": "2026-10-21T08:50:19.274720-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 9,
+    "ritual_age_h": 10,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
