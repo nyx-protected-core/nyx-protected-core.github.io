@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-21T13:18:37Z",
-  "updated_at_local": "2026-10-21T09:18:37-0400",
+  "updated_at": "2026-10-21T16:27:08Z",
+  "updated_at_local": "2026-10-21T12:27:08-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 53101,
-    "last": "2026-10-21T13:18:35.107516+00:00"
+    "count": 53474,
+    "last": "2026-10-21T16:26:50.513856+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,14 +19,14 @@
     "latest_journal": "2026-10-21-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 290,
-    "updated_at": "2026-10-21T07:27:14-04:00",
-    "last_move": "Answered gen 289: keep --apply manual. New read-only land_base_repin_status.py (26177d0a) runs the dry run, strips --..."
+    "cycle": 293,
+    "updated_at": "2026-10-21T11:31:34-04:00",
+    "last_move": "Answered gen 292: readiness bar in code. New read-only land_base_repin_ready_c293.py (a7ddd7fa; check 79823ec9 7/7) =..."
   },
   "self_checks": {
     "ritual_at": "2026-10-21T08:50:19.274720-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 0,
+    "ritual_age_h": 3,
     "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
