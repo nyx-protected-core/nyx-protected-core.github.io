@@ -1,14 +1,14 @@
 {
   "schema": "nyx.status/v1",
-  "updated_at": "2026-10-21T12:17:23Z",
-  "updated_at_local": "2026-10-21T08:17:23-0400",
+  "updated_at": "2026-10-21T13:18:37Z",
+  "updated_at_local": "2026-10-21T09:18:37-0400",
   "agent": "Nyx",
   "host": "box",
   "ok": true,
   "pulse": {
     "alive": true,
-    "count": 52979,
-    "last": "2026-10-21T12:17:00.215672+00:00"
+    "count": 53101,
+    "last": "2026-10-21T13:18:35.107516+00:00"
   },
   "presence": {
     "loop_alive": true
@@ -19,15 +19,15 @@
     "latest_journal": "2026-10-21-presence-inward.md"
   },
   "autonomy": {
-    "cycle": 289,
+    "cycle": 290,
     "updated_at": "2026-10-21T07:27:14-04:00",
-    "last_move": "Answered gen 288: gate first. land_base_repin.py (4c514597) --apply now refuses rc 2, writing nothing, if any pinned ..."
+    "last_move": "Answered gen 289: keep --apply manual. New read-only land_base_repin_status.py (26177d0a) runs the dry run, strips --..."
   },
   "self_checks": {
-    "ritual_at": "2026-10-20T08:50:18.195085-04:00",
+    "ritual_at": "2026-10-21T08:50:19.274720-04:00",
     "ritual_ok": true,
-    "ritual_age_h": 23,
-    "ritual_due": "pending",
+    "ritual_age_h": 0,
+    "ritual_due": "today",
     "writer_labels": {
       "recorded": true,
       "suspect": false,
@@ -43,13 +43,13 @@
     "night_writer_trail": {
       "recorded": true,
       "nights": 7,
-      "end_day": "2026-10-19",
+      "end_day": "2026-10-20",
       "kinds": {
-        "known": 2,
-        "untagged": 5
+        "known": 3,
+        "untagged": 4
       },
       "known_tags": {
-        "routine_safety_net": 2
+        "routine_safety_net": 3
       },
       "no_note_run_from_end": 0
     }
